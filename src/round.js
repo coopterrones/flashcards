@@ -20,7 +20,7 @@ class Round {
 
     this.deck.shift();
 
-    return (newTurn.giveFeedback());
+    return newTurn.giveFeedback();
   }
 
   calculatePercentageCorrect() {
@@ -34,6 +34,7 @@ class Round {
   endRound() {
     console.log(`**Round over! You answered ${this.calculatePercentageCorrect()}% of the questions correctly!`);
   }
+
 }
 
 module.exports = Round;
