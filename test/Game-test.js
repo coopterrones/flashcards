@@ -11,11 +11,12 @@ const Data = require('../src/data');
 describe('Game', function() {
 
   it('should create a deck', function() {
-    // const prototypeQuestions = data.prototypeData;
     let game = new Game();
 
     let newGame = game.start();
-    
+
     expect(game.deck.cards.length).to.equal(30);
   })
+
+  it('')
 })

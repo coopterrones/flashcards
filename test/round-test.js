@@ -124,9 +124,9 @@ describe('Round', function() {
     const card3 = new Card(3, 'What is is Cooper\'s favorite food?', ['sushi', 'burritos', 'both'], 'both');
     const deck = new Deck([card1, card2, card3]);
     const round = new Round(deck);
-    let resultTurnOne = round.takeTurn('panda');
-    let resultTurnTwo = round.takeTurn('white');
-    let resultTurnThree = round.takeTurn('both');
+    round.takeTurn('panda');
+    round.takeTurn('white');
+    round.takeTurn('both');
 
     let percentageCorrect = round.calculatePercentageCorrect();
 
