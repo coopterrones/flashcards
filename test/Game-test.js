@@ -17,6 +17,4 @@ describe('Game', function() {
 
     expect(game.deck.cards.length).to.equal(30);
   })
-
-  it('')
 })
